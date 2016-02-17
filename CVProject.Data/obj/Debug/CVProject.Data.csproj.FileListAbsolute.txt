@@ -1,0 +1,12 @@
+C:\dev\CVProject\CVProject.Data\bin\Debug\CVProject.Data.dll.config
+C:\dev\CVProject\CVProject.Data\bin\Debug\CVProject.Data.dll
+C:\dev\CVProject\CVProject.Data\bin\Debug\CVProject.Data.pdb
+C:\dev\CVProject\CVProject.Data\bin\Debug\CVProject.Entities.dll
+C:\dev\CVProject\CVProject.Data\bin\Debug\EntityFramework.dll
+C:\dev\CVProject\CVProject.Data\bin\Debug\EntityFramework.SqlServer.dll
+C:\dev\CVProject\CVProject.Data\bin\Debug\CVProject.Entities.pdb
+C:\dev\CVProject\CVProject.Data\bin\Debug\EntityFramework.xml
+C:\dev\CVProject\CVProject.Data\bin\Debug\EntityFramework.SqlServer.xml
+C:\dev\CVProject\CVProject.Data\obj\Debug\CVProject.Data.csprojResolveAssemblyReference.cache
+C:\dev\CVProject\CVProject.Data\obj\Debug\CVProject.Data.dll
+C:\dev\CVProject\CVProject.Data\obj\Debug\CVProject.Data.pdb

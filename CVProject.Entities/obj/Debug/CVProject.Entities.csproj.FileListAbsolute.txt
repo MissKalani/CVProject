@@ -1,0 +1,5 @@
+C:\dev\CVProject\CVProject.Entities\bin\Debug\CVProject.Entities.dll
+C:\dev\CVProject\CVProject.Entities\bin\Debug\CVProject.Entities.pdb
+C:\dev\CVProject\CVProject.Entities\obj\Debug\CVProject.Entities.csprojResolveAssemblyReference.cache
+C:\dev\CVProject\CVProject.Entities\obj\Debug\CVProject.Entities.dll
+C:\dev\CVProject\CVProject.Entities\obj\Debug\CVProject.Entities.pdb
