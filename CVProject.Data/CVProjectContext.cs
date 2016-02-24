@@ -1,4 +1,5 @@
-﻿using CVProject.Entities;
+﻿using CVProject.Data.Configurations;
+using CVProject.Entities;
 using System;
 using System.Collections.Generic;
 using System.Data.Entity;
@@ -10,12 +11,12 @@ namespace CVProject.Data
 {
     public class CVProjectContext : DbContext
     {
-        IDbSet<Material> MaterialsSet { get; set; }
-        IDbSet<Education> EducationSet { get; set; }
-        IDbSet<Technology> TechnologySet { get; set; }
-        IDbSet<Skill> SkillSet { get; set; }
-        IDbSet<WorkExperience> WorkExperienceSet { get; set; }
-        IDbSet<Course> CourseSet { get; set; }
+        public IDbSet<Material> MaterialsSet { get; set; }
+        public IDbSet<Education> EducationSet { get; set; }
+        public IDbSet<Technology> TechnologySet { get; set; }
+        public IDbSet<Skill> SkillSet { get; set; }
+        public IDbSet<WorkExperience> WorkExperienceSet { get; set; }
+        public IDbSet<Course> CourseSet { get; set; }
 
         public CVProjectContext()
             : base("CVProjectContext")
@@ -26,6 +27,12 @@ namespace CVProject.Data
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
             base.OnModelCreating(modelBuilder);
+            modelBuilder.Configurations.Add(new CourseConfiguration());
+            modelBuilder.Configurations.Add(new EducationConfiguration());
+            modelBuilder.Configurations.Add(new SkillConfiguration());
+            modelBuilder.Configurations.Add(new TechnologyConfiguration());
+            modelBuilder.Configurations.Add(new MaterialConfiguration());
+            modelBuilder.Configurations.Add(new WorkExperienceConfiguration());
         }
 
     }

@@ -52,6 +52,10 @@
     <Compile Include="Configurations\CourseConfiguration.cs" />
     <Compile Include="Configurations\EducationConfiguration.cs" />
     <Compile Include="Configurations\EntityBaseConfiguration.cs" />
+    <Compile Include="Migrations\201602230855301_Initial.cs" />
+    <Compile Include="Migrations\201602230855301_Initial.Designer.cs">
+      <DependentUpon>201602230855301_Initial.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Repositories\CourseRepository.cs" />
     <Compile Include="Repositories\EducationRepository.cs" />
@@ -83,6 +87,11 @@
   <ItemGroup>
     <None Include="App.config" />
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\201602230855301_Initial.resx">
+      <DependentUpon>201602230855301_Initial.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

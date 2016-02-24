@@ -4,11 +4,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{F0DC63B6-668C-4419-86CA-67444B1A3A6E}</ProjectGuid>
+    <ProjectGuid>{9FC70A12-B4AD-4968-869A-58CC25B0B2EF}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>CVProject.Entities</RootNamespace>
-    <AssemblyName>CVProject.Entities</AssemblyName>
+    <RootNamespace>CVProject.Services</RootNamespace>
+    <AssemblyName>CVProject.Services</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
@@ -40,17 +40,19 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Course.cs" />
-    <Compile Include="Education.cs" />
-    <Compile Include="IEntityBase.cs" />
-    <Compile Include="Material.cs" />
+    <Compile Include="EducationService.cs" />
+    <Compile Include="IEducationService.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Skill.cs" />
-    <Compile Include="Technology.cs" />
-    <Compile Include="WorkExperience.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="ClassDiagram1.cd" />
+    <ProjectReference Include="..\CVProject.Data\CVProject.Data.csproj">
+      <Project>{72dcfb44-2897-446e-9550-88ff99fb4565}</Project>
+      <Name>CVProject.Data</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\CVProject.Entities\CVProject.Entities.csproj">
+      <Project>{f0dc63b6-668c-4419-86ca-67444b1a3a6e}</Project>
+      <Name>CVProject.Entities</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

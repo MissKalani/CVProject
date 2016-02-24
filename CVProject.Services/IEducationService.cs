@@ -5,9 +5,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace CVProject.Data.Repositories
+namespace CVProject.Services
 {
-    public interface IEducationRepository
+    public interface IEducationService
     {
         List<Education> GetAllEducation();
     }
